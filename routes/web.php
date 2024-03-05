@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AnuncioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +19,9 @@ use App\Http\Controllers\DashboardController;
 Route::prefix('/')->group(function() {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboards-index');
 });
+
+
+Route::prefix('/anuncios')->group(function() {
+    Route::get('/', [AnuncioController::class, 'index'])->name('anuncios-index');
+});
+

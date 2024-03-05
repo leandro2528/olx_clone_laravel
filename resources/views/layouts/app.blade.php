@@ -13,7 +13,7 @@
                 
                 <nav class="navbar navbar-expand-lg ">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">OLX - Clone</a>
+                        <a class="navbar-brand" href="{{ route('dashboards-index') }}">OLX - Clone</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -64,7 +64,7 @@
                                         <span>Notificações</span>
                                     </a>
                                 <li>
-                                    <a class="btn btn-primary btn-sm" href="#">
+                                    <a class="btn btn-primary btn-sm" href="{{ route('anuncios-index') }}">
                                         Anunciar
                                     </a>
                                 </li>
