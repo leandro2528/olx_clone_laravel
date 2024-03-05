@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AnuncioController;
+use App\Http\Controllers\ImovelController;
+use App\Http\Controllers\ApartamentoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +27,13 @@ Route::prefix('/anuncios')->group(function() {
     Route::get('/', [AnuncioController::class, 'index'])->name('anuncios-index');
 });
 
+
+Route::prefix('/imoveis')->group(function() {
+    Route::get('/', [ImovelController::class, 'index'])->name('imoveis-index');
+});
+
+Route::prefix('/apartamentos')->group(function() {
+    Route::get('/create', [ApartamentoController::class, 'create'])->name('apartamentos-create');
+    Route::post('/', [ApartamentoController::class, 'store'])->name('apartamentos-store');
+    Route::get('{id}edit', [ApartamentoController::class, 'edit'])->name('apartamentos-edit');
+});

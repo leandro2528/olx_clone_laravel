@@ -81,7 +81,7 @@
     <hr>
     @yield('content')
 
-    <footer>
+    <footer class="mt-5">
         <div class="container">
             <div class="row d-flex justify-content-between">
                 <div class="col-2">

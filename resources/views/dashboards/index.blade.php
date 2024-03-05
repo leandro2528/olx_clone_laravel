@@ -59,12 +59,14 @@
             </div>
         </div>
         <div class="col">
-            <div class="box-cat w-100">
-                <div class="box-icon text-center p-2" style="background-color: #eee; border-radius: 6px;">
-                    <img src="icons/icon3.png" class="d-block w-100" alt="...">
+            <a class="text-decoration-none" href="{{ route('imoveis-index') }}">
+                <div class="box-cat w-100">
+                    <div class="box-icon text-center p-2" style="background-color: #eee; border-radius: 6px;">
+                        <img src="icons/icon3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="box-title text-center" style="font-size: 12px; color: #555;">Imóveis</div>
                 </div>
-                <div class="box-title text-center" style="font-size: 12px; color: #555;">Imóveis</div>
-            </div>
+            </a>
         </div>
         <div class="col mx-3">
             <div class="box-cat w-100">
@@ -138,6 +140,23 @@
                 <div class="box-title text-center" style="font-size: 12px; color: #555;">Vagas de Empregos</div>
             </div>
         </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-12">
+            <h4>Proucurados por você</h4>
+        </div>
+    </div>
+    <div class="row">
+    @foreach($apartamentos as $apartamento)
+        <div class="col-3">
+            <div class="card-box">
+                <div class="card">
+                    <a href="{{ route('apartamentos-edit', ['id'=>$apartamento->id]) }}"><img class="w-100" src="{{ $apartamento->foto }}" alt=""></a>
+                    <div>{{ $apartamento->descricao }}</div>
+                </div>      
+            </div>
+        </div>
+    @endforeach
     </div>
 </div>
 @endsection
