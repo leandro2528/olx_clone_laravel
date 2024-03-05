@@ -9,7 +9,7 @@ use App\Models\Apartamento;
 class DashboardController extends Controller
 {
     public function index () {
-        $apartamentos = Apartamento::all();
+        $apartamentos = Apartamento::orderBy('id', 'desc')->get();
         return view('dashboards.index', ['apartamentos'=>$apartamentos]);
     }
 }
