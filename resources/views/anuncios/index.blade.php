@@ -21,20 +21,24 @@
             </a>
         </div>
         <div class="col-3">
-            <div class="card" style="background-color: #eee;">
-                <div class="card-icon">
-                    <img style="width: 60px;" src="icons/icon1.png" alt="">
+            <a class="text-decoration-none" href="" data-bs-toggle="modal" data-bs-target="#modalAutopecas">
+                <div class="card" style="background-color: #eee;">
+                    <div class="card-icon">
+                        <img style="width: 60px;" src="icons/icon1.png" alt="">
+                    </div>
+                    <div class="card-title" style="font-size: 12px; font-weight: 600; padding-left: 14px;">Autos e Peças</div>
                 </div>
-                <div class="card-title" style="font-size: 12px; font-weight: 600; padding-left: 14px;">Autos e Peças</div>
-            </div>
+            </a>
         </div>
         <div class="col-3">
-            <div class="card" style="background-color: #eee;">
-                <div class="card-icon">
-                    <img style="width: 60px;" src="icons/icon4.png" alt="">
+            <a class="text-decoration-none" href="" data-bs-toggle="modal" data-bs-target="#modalCelulartelefonia">
+                <div class="card" style="background-color: #eee;">
+                    <div class="card-icon">
+                        <img style="width: 60px;" src="icons/icon4.png" alt="">
+                    </div>
+                    <div class="card-title" style="font-size: 12px; font-weight: 600; padding-left: 14px;">Celulares e Telefonia</div>
                 </div>
-                <div class="card-title" style="font-size: 12px; font-weight: 600; padding-left: 14px;">Celulares e Telefonia</div>
-            </div>
+            </a>
         </div>
         <div class="col-3">
             <div class="card" style="background-color: #eee;">
@@ -194,7 +198,9 @@
 </div>
 @endsection
 
-<!-- Modal Imóveis-->
+<!-- ##########    ##########    ##########  MODAIS  ##########    ##########    ########## -->
+
+<!-- Modal Imoveis-->
 <div class="modal fade" id="modalImoveis" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -208,7 +214,7 @@
                         <a class="nav-link d-flex justify-content-between" href="{{ route('apartamentos-create') }}">
                             <span>Apartamentos</span>
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
                                 </svg>
                             </span>
@@ -218,7 +224,7 @@
                         <a class="nav-link d-flex justify-content-between" href="">
                             <span>Casas</span>
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
                                 </svg>
                             </span>
@@ -228,7 +234,7 @@
                         <a class="nav-link d-flex justify-content-between" href="">
                             <span>Aluguel de quartos</span>
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
                                 </svg>
                             </span>
@@ -238,7 +244,7 @@
                         <a class="nav-link d-flex justify-content-between" href="">
                             <span>Temporadas</span>
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
                                 </svg>
                             </span>
@@ -248,7 +254,7 @@
                         <a class="nav-link d-flex justify-content-between" href="">
                             <span>Terrenos, Sitios e Fazendas</span>
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
                                 </svg>
                             </span>
@@ -258,7 +264,7 @@
                         <a class="nav-link d-flex justify-content-between" href="">
                             <span>Comércio e Industria</span>
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
                                 </svg>
                             </span>
@@ -270,3 +276,161 @@
         </div>
     </div>
 </div>
+
+<style>
+    .nav-item {
+        color: #777;
+        padding: 0px 5px;
+    }
+    .nav-item:hover {
+        background-color: #999;
+        color: #fff;
+        padding: 0px 5px;
+    }
+    .nav-item:hover .bi {
+        transform: rotate(45deg);
+    }
+</style>
+
+<!-- Modal Auro e Peças-->
+<div class="modal fade" id="modalAutopecas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Auto e Peças</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="{{ route('apartamentos-create') }}">
+                            <span>Carros, Vans e Utilitários</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="">
+                            <span>Motos</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="">
+                            <span>Ônibus</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="">
+                            <span>Caminhões</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="">
+                            <span>Barcos e Aeronaves</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Celular e Telefonenia-->
+<div class="modal fade" id="modalCelulartelefonia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Celulares e Telefonenia</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="{{ route('apartamentos-create') }}">
+                            <span>Celulares e Smartphones</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="">
+                            <span>Acessórios de Celulares</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="">
+                            <span>Peças de Celular</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="">
+                            <span>Smartwathes</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="">
+                            <span>Acessórios para Smartwathes</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between" href="">
+                            <span>Telefonia Fixa e sem Fio</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

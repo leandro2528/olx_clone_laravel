@@ -29,26 +29,17 @@
                 <h5>Encontre o seu imóvel ideal</h5>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-               
-                <div class="card">
-                    <div class="card-titulo"></div>
-                    <div class="card-descricao"></div>
-                    <div class="card-tipo-apartamento"></div>
-                    <div class="card-venda-aluga"></div>
-                    <div class="card-quantidade-quartos"></div>
-                    <div class="card-quantidade-banheiros"></div>
-                    <div class="card-area"></div>
-                    <div class="card-condominio"></div>
-                    <div class="card-iptu"></div>
-                    <div class="card-detalhe-imovel"></div>
-                    <div class="card-detalhe-condominio"></div>
-                    <div class="card-preco"></div>
-                    <div class="card-localizacao"></div>
-                    <div class="card-contato"></div>
-                </div>
-               
+            <div class="row">
+                @foreach($apartamentos as $apartamento)
+                    <div class="col-3">
+                        <div class="card-box">
+                            <div class="card">
+                                <a href="{{ route('apartamentos-edit', ['id'=>$apartamento->id]) }}"><img class="w-100" src="{{ $apartamento->foto }}" alt=""></a>
+                                <div>{{ $apartamento->descricao }}</div>
+                            </div>      
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>

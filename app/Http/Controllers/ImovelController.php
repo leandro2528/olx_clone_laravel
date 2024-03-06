@@ -9,7 +9,7 @@ use App\Models\Apartamento;
 class ImovelController extends Controller
 {
     public function index() {
-       
-        return view('imoveis.index');
+        $apartamentos = Apartamento::orderBy('id', 'desc')->get();
+        return view('imoveis.index', ['apartamentos'=>$apartamentos]);
     }
 }

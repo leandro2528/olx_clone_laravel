@@ -6,6 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AnuncioController;
 use App\Http\Controllers\ImovelController;
 use App\Http\Controllers\ApartamentoController;
+use App\Http\Controllers\AutopecaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +38,5 @@ Route::prefix('/apartamentos')->group(function() {
     Route::post('/', [ApartamentoController::class, 'store'])->name('apartamentos-store');
     Route::get('{id}edit', [ApartamentoController::class, 'edit'])->name('apartamentos-edit');
 });
+
+
