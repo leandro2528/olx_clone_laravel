@@ -5,11 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Apartamento;
+use App\Models\Tipoapartamento; 
+use App\Models\Quantidade; 
 
 class ApartamentoController extends Controller
 {
     public function create() {
-        return view('apartamentos.create');
+        $tipoapartamentos = TipoApartamento::all();
+        $quantidades = Quantidade::all();
+        return view('apartamentos.create', ['tipoapartamentos'=>$tipoapartamentos, 'quantidades'=>$quantidades]);
     }
 
     public function store(Request $request) {

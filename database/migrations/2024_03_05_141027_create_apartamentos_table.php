@@ -15,13 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('titulo');
             $table->string('descricao');
-            $table->string('tipo');
             $table->string('venda_aluga');
-            $table->integer('numero-quarto');
-            $table->integer('numero-banheiro');
             $table->string('area');
-            $table->integer('vaga-garagem');
-            $table->integer('vaga-condominio');
             $table->string('iptu');
             $table->string('detalhes-imovel');
             $table->string('detalhes-condominio');

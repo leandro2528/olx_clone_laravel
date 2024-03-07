@@ -12,13 +12,10 @@ class Apartamento extends Model
     protected $fillable = [
         'titulo',
         'descricao',
-        'tipo',
+        'tipoapartamento_id',
         'venda_aluga',
-        'numero-quarto',
-        'numero-banheiro',
+        'quantidade_id',
         'area',
-        'vaga-garagem',
-        'vaga-condominio',
         'iptu',
         'detalhes-imovel',
         'detalhes-condominio',
@@ -27,4 +24,12 @@ class Apartamento extends Model
         'localizacao',
         'contato',
     ];
+    
+    public function tipoapartamento() {
+        return $this->belongsTo(Tipoapartamento::class);
+    }
+
+    public function quantidade() {
+        return $this->belongsTo(Quantidade::class);
+    }
 }

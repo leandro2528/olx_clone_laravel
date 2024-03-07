@@ -26,24 +26,46 @@
                     <input type="text" class="form-control" name="titulo">
                 </div>
                 <div class="form-group my-3">
-                    <label for="">descricao *</label>
+                    <label for="">Descricao *</label>
                     <input type="text" class="form-control" name="descricao">
                 </div>
                 <div class="form-group my-3">
-                    <label for="">Tipo *</label>
-                    <input type="text" class="form-control" name="tipo">
+                    <label for="">Tipo de Apartamento *</label>
+                    <select class="form-select" name="tipoapartamento_id" id="tipoapartamento_id">
+                        <option value="select">-- selecione --</option>
+                        @foreach($tipoapartamentos as $tipoapartamento)
+                            <option value="{{ $tipoapartamento->id }}">{{ $tipoapartamento->nome }}</option>
+                        @endforeach
+                    </select>
                 </div>
                 <div class="form-group my-3">
                     <label for="">Venda / Aluga *</label>
-                    <input type="text" class="form-control" name="venda_aluga">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="venda_aluga" id="venda" value="venda">
+                        <label class="form-check-label" for="venda">Venda</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="venda_aluga" id="aluga" value="aluga">
+                        <label class="form-check-label" for="aluga">Aluga</label>
+                    </div>
                 </div>
                 <div class="form-group my-3">
                     <label for="">Número de quartos *</label>
-                    <input type="text" class="form-control" name="numero-quarto">
+                    <select class="form-select" name="quantidade_id" id="quantidade_id">
+                        <option value="select">-- selecione --</option>
+                        @foreach($quantidades as $quantidade)
+                            <option value="{{ $quantidade->id }}">{{ $quantidade->nome }}</option>
+                        @endforeach
+                    </select>
                 </div>
                 <div class="form-group my-3">
                     <label for="">Número de banheiros *</label>
-                    <input type="text" class="form-control" name="numero-banheiro">
+                    <select class="form-select" name="quantidade_id" id="quantidade_id">
+                        <option value="select">-- selecione --</option>
+                        @foreach($quantidades as $quantidade)
+                            <option value="{{ $quantidade->id }}">{{ $quantidade->nome }}</option>
+                        @endforeach
+                    </select>
                 </div>
                 <div class="form-group my-3">
                     <label for="">Área *</label>
@@ -51,11 +73,21 @@
                 </div>
                 <div class="form-group my-3">
                     <label for="">Vagas de garagem *</label>
-                    <input type="text" class="form-control" name="vaga-garagem">
+                    <select class="form-select" name="quantidade_id" id="quantidade_id">
+                        <option value="select">-- selecione --</option>
+                        @foreach($quantidades as $quantidade)
+                            <option value="{{ $quantidade->id }}">{{ $quantidade->nome }}</option>
+                        @endforeach
+                    </select>
                 </div>
                 <div class="form-group my-3">
                     <label for="">Vagas de condominio *</label>
-                    <input type="text" class="form-control" name="vaga-condominio">
+                    <select class="form-select" name="quantidade_id" id="quantidade_id">
+                        <option value="select">-- selecione --</option>
+                        @foreach($quantidades as $quantidade)
+                            <option value="{{ $quantidade->id }}">{{ $quantidade->nome }}</option>
+                        @endforeach
+                    </select>
                 </div>
                 <div class="form-group my-3">
                     <label for="">IPTU *</label>
