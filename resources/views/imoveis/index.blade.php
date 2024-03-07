@@ -29,6 +29,7 @@
                 <h5>Encontre o seu imóvel ideal</h5>
             </div>
         </div>
+        @if(count($apartamentos))
             <div class="row">
                 @foreach($apartamentos as $apartamento)
                     <div class="col-3">
@@ -41,6 +42,9 @@
                     </div>
                 @endforeach
             </div>
+            @else
+            <div class="alert alert-info">Não existem apartamentos cadastrados nesta lista</div>
+            @endif
         </div>
     </div>
 </div>

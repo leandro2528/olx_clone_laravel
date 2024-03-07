@@ -3,6 +3,21 @@
 @section('title', 'Cadastro de Apartamentos')
 
 @section('content')
+<style>
+     .botao_anunciar {
+            padding: 10px 24px;
+            background-color: rgb(242, 128, 0);
+            color: #fff;
+            font-weight: 400;
+            border-radius: 16px;
+            text-decoration: none;
+            transition: 0.4s;
+            border: none;
+        }
+        .botao_anunciar:hover {
+            background-color: rgb(223,116,0);
+        }
+</style>
 <div class="container">
     <div class="row">
         <div class="col-12 d-flex flex-column align-items-center mt-5">
@@ -118,7 +133,7 @@
                     <input type="text" class="form-control" name="contato">
                 </div>
                 <div class="form-group my-3">
-                    <input type="submit" class="btn btn-primary btn-sm" value="Cadastrar Apartamento">
+                    <input type="submit" class="botao_anunciar" value="Enviar Anúncio">
                 </div>
 
             </form>

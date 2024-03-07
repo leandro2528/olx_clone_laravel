@@ -9,10 +9,10 @@
 <body>
     <style>
         .botao_anunciar {
-            padding: 6px 18px;
+            padding: 10px 24px;
             background-color: rgb(242, 128, 0);
             color: #fff;
-            font-weight: 600;
+            font-weight: 400;
             border-radius: 16px;
             text-decoration: none;
             transition: 0.4s;
@@ -20,23 +20,47 @@
         .botao_anunciar:hover {
             background-color: rgb(223,116,0);
         }
+
+        .form-pesquisar {
+            border: 1px solid #eee;
+            width: 400px;
+            border-radius: 8px;
+        }
+
+        .form-pesquisar input {
+            border: none;
+        }
+
+        .form-pesquisar button {
+            border: none;
+        }
+
     </style>
     <div class="container">
         <div class="row">
             <div class="col-12">
                 
-                <nav class="navbar navbar-expand-lg ">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="{{ route('dashboards-index') }}">OLX - Clone</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarScroll">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid d-flex justify-content-between">
+                        <div class="logo-busca d-flex">
+                            <a class="navbar-brand" href="{{ route('dashboards-index') }}">
+                                <img src="images/logo-olx.png" alt="" style="width: 80px;">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            
+                            <form class="form-pesquisar d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Pesquisar...">
+                                <button type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search m-3" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                    </svg>
+                                </button>
                             </form>
-                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        </div>
+                        <div class="menu">
+                            <ul class=" d-flex justify-content-between align-items-center navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
 
                                 <li class="nav-item d-flex">
                                     <a class="nav-link mx-2" href="#">
@@ -82,9 +106,7 @@
                                         Anunciar
                                     </a>
                                 </li>
-
                             </ul>
-                           
                         </div>
                     </div>
                 </nav>
